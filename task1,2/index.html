@@ -1,88 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <title>Potato's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+  <title>Potato's Portfolio</title>
+  <link rel="stylesheet" href="style.css">   
+
 </head>
-    <body>
+<body>
+  <header>
     <h1>Potato</h1>
     <nav>
-        <ul>
+      <ul>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <li><a href="#contact">Contact</a></li>   
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <figure>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-me">   
+
+      <h2>About Me</h2>
+      <figure>
         <img src="Potato's Photo.jpg" alt="Potato's photo">
         <figcaption>Potato</figcaption>
-        </figure>
-        <p>Hi, I'm Potato, a web developer with a passion for creating interactive and user-friendly websites.</p>
+      </figure>
+      <p>Hi, I'm Potato, a web developer with a passion for creating interactive and user-friendly websites.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-        <li>
+      <h2>Projects</h2>
+      <div class="project-carousel">
+        <button class="prev">&#10094;</button>
+        <div class="slides">
+          <div class="slide">
             <h3>Project One</h3>
             <p>A simple portfolio webpage to showcase my skills and projects.</p>
             <a href="project1.html">View Project</a>
-        </li>
-        <li>
+          </div>
+          <div class="slide">
             <h3>Project Two</h3>
             <p>A blog platform built using HTML, CSS, and JavaScript.</p>
             <a href="project2.html">View Project</a>
-        </li>
-        </ul>
+          </div>
+          </div>
+        <button class="next">&#10095;</button>
+      </div>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <table>
+      <h2>Skills</h2>
+      <div class="skill-bar">
+        <span class="skill-name">HTML</span>
+        <div class="skill-progress">
+          <div class="skill-fill" style="width: 80%;"></div>
+        </div>
+      </div>
+      <table>
         <tr>
-            <th>Skill</th>
-            <th>Experience Level</th>
+          <th>Skill</th>
+          <th>Experience Level</th>
         </tr>
         <tr>
-            <td>HTML</td>
-            <td>Advanced</td>
+          <td>HTML</td>
+          <td>Advanced</td>
         </tr>
         <tr>
-            <td>CSS</td>
-            <td>Intermediate</td>
+          <td>CSS</td>
+          <td>Intermediate</td>
         </tr>
         <tr>
-            <td>JavaScript</td>
-            <td>Intermediate</td>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
         </tr>
-        </table>
+      </table>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <form>
+      <h2>Contact</h2>
+      <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
         <br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input   
+ type="email" id="email" name="email" required>
         <br>
         <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" required></textarea>
         <br>
         <input type="submit" value="Submit">
-        </form>
+      </form>
     </section>
+  </main>
 
-    <footer>
-        ©2024 Potato. All rights reserved.
-    </footer>
-    </body>
+  <footer>   
+
+    ©2024 Potato. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
